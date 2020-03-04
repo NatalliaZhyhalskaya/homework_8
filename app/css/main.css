@@ -1,0 +1,498 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1px; }
+
+ul {
+  padding: 0rem !important; }
+
+body {
+  max-width: 1580rem;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none !important; }
+
+header {
+  background-color: #f6f2f2; }
+
+.navifation {
+  background-color: #313030;
+  display: flex;
+  justify-content: center; }
+
+.navigation_link {
+  height: 88rem;
+  padding: 45rem 28rem 30rem 22rem; }
+
+.navigation_link_title {
+  font-size: 14rem;
+  font-weight: bold;
+  color: #e0e0e0;
+  padding: 45rem 28rem 32rem 22rem;
+  margin: 0px; }
+
+.navigation_link_title:hover {
+  color: #e0e0e0 !important; }
+
+.navigation_link:hover {
+  background-color: #ff3f40;
+  transition: all 0.3;
+  cursor: pointer; }
+
+.header_information {
+  display: flex; }
+
+.header_information_text, .header_information_video {
+  flex-basis: 50%; }
+
+.header_information_text_title {
+  font-size: 60rem;
+  padding: 60rem 0rem 35rem 0rem;
+  word-break: break-word; }
+
+.header_information_text_subtitle, .adventages_information_text_subtitle {
+  font-size: 14rem;
+  line-height: 2;
+  color: #6f6d66; }
+
+.header_information_text_btn, .adventages_information_text_btn {
+  font-size: 18rem;
+  background-color: #ff3f40;
+  color: #ffffff;
+  padding: 22rem 60rem;
+  border: none;
+  border-radius: 5rem;
+  box-shadow: none;
+  margin: 60rem 0rem 122rem 0rem; }
+
+.header_information_video_video {
+  box-shadow: -10rem -10rem 10rem grey;
+  margin: 100rem 0rem 100rem 0rem;
+  max-width: 100%; }
+
+.adventages {
+  padding: 110rem 0rem 50rem 0rem;
+  border-bottom: solid 2rem #ececec; }
+
+.adventages_information {
+  justify-content: space-between; }
+
+.adventages_information_text {
+  flex-basis: 40%;
+  position: relative;
+  display: block; }
+
+.adventages_information_text_real, .adventages_information_text_hidden {
+  position: absolute; }
+
+.adventages_information_text_hidden {
+  display: none;
+  background-color: #ffffff; }
+
+.adventages_information_text_title {
+  font-size: 42rem;
+  padding: 0rem 0rem 35rem 0rem;
+  color: #585858; }
+
+.adventages_information_text_btn {
+  background-color: #ffffff;
+  color: #ff3f40;
+  border: #ff3f40 solid 2rem; }
+
+.adventages_information_box_titile {
+  font-size: 24rem;
+  font-weight: bold;
+  color: #737373;
+  padding: 30rem 0rem 15rem 0rem; }
+
+.adventages_information_box_text {
+  color: #585858;
+  font-size: 16rem;
+  line-height: 1.8; }
+
+.adventages_information_adventages {
+  flex-basis: 50%;
+  flex-wrap: wrap;
+  height: 100%; }
+
+.adventages_information_box {
+  flex-basis: 50%;
+  padding: 0rem 0rem 50rem 20rem; }
+
+.products {
+  max-width: 490rem;
+  margin: 0 auto;
+  padding: 100rem 0rem 85rem 0rem; }
+
+.wrapper_products {
+  padding: 100remm 0rem 85rem 0rem; }
+
+.products_titile {
+  color: #333333;
+  font-size: 42rem;
+  padding-bottom: 37rem; }
+
+.products_subtitile {
+  font-size: 16rem;
+  color: #737373;
+  padding-bottom: 32rem;
+  line-height: 1.8; }
+
+.products_line {
+  max-width: 130rem;
+  color: #ff3f40;
+  size: 10rem;
+  border-bottom: solid 2rem; }
+
+.products_links {
+  color: #444343;
+  padding-bottom: 67rem;
+  display: flex;
+  justify-content: center; }
+
+.products_link {
+  padding: 0rem 20rem; }
+
+.products_link_link {
+  font-size: 22rem; }
+
+.products_link:hover {
+  color: #ff3f40;
+  transition: all 0.3;
+  cursor: pointer; }
+
+.products_pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.products_picture {
+  width: 280rem;
+  padding-bottom: 10rem; }
+
+.team-titile, .getTouch_title {
+  padding: 120rem 0rem 0rem 0rem;
+  max-width: 430rem; }
+
+.team_line {
+  margin: 30rem 0rem 67rem 0rem; }
+
+.team-box {
+  position: relative;
+  width: 100%;
+  height: 570rem; }
+
+.team_one {
+  position: absolute;
+  display: block;
+  z-index: 1; }
+
+.team_two, .team_tree, .team_four, .team_five {
+  position: absolute;
+  display: none;
+  z-index: 10; }
+
+.team-information_text {
+  padding-left: 73rem;
+  padding-bottom: 110rem; }
+
+.team-information_text_title {
+  font-size: 30rem;
+  color: #585858; }
+
+.team-information_text_subtitle {
+  font-size: 16rem;
+  line-height: 1.8;
+  padding: 37rem 0rem 45rem 0rem;
+  color: #585858; }
+
+.team-information_text_link {
+  font-size: 18rem;
+  padding-right: 30rem;
+  color: #585858; }
+
+.team-information_text_photo {
+  width: 170rem;
+  padding-top: 87rem;
+  opacity: 0.3; }
+
+.team-information_text_photo:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.3; }
+
+.team-information_text_photoes_box {
+  background-color: #585858a1; }
+
+.team-information_links:hover {
+  color: #ff3f40;
+  transition: all 0.3;
+  cursor: pointer; }
+
+.writeUs {
+  position: relative;
+  height: 517rem; }
+
+.bacgraund_box {
+  max-width: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.3; }
+
+.bacgraund_picture {
+  display: block;
+  max-width: 100%; }
+
+.bacgraund_picture_small {
+  display: none;
+  max-width: 100%;
+  height: 517rem; }
+
+.writeUs_box {
+  position: absolute;
+  z-index: 3;
+  height: 500rem;
+  width: 100%; }
+
+.writeUs_box_text {
+  color: #f82a2a;
+  font-size: 42rem;
+  padding: 100rem 0%; }
+
+.writeUs_box_form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.writeUs_box_email {
+  width: 525rem;
+  height: 88rem;
+  border: none;
+  border-radius: 5rem;
+  margin-right: 20rem;
+  color: black;
+  font-size: 20rem;
+  padding-left: 30rem; }
+
+.writeUs_box_btn {
+  background-color: #ff3f40;
+  color: #ffffffff;
+  font-size: 18rem;
+  border: none;
+  border-radius: 5rem;
+  padding: 30rem 60rem; }
+
+.getTouch_form {
+  margin-bottom: 60rem; }
+
+.forms {
+  width: 730rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.forms_name, .forms_mail, .forms_message, .forms_btn {
+  background-color: #e5e5e5;
+  font-size: 18rem;
+  padding: 30rem 45rem;
+  color: #444343;
+  border: none;
+  border-radius: 5rem;
+  width: 335rem;
+  margin-bottom: 46rem; }
+
+.forms_message, .forms_btn {
+  width: 100%;
+  resize: none; }
+
+.forms_btn {
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #ff3f40;
+  font-weight: bold; }
+
+.information {
+  max-width: 570rem;
+  height: 460rem;
+  padding: 140rem 0rem 0rem 80rem;
+  background-color: #2d2d2d;
+  margin-left: 50rem; }
+
+.information_box {
+  color: #d5d5d5;
+  max-width: 270rem; }
+
+.information_box_title {
+  font-size: 18rem;
+  padding-bottom: 35rem; }
+
+.information_box_text {
+  font-size: 16rem;
+  padding-bottom: 30rem;
+  line-height: 2; }
+
+.footer {
+  height: 110rem;
+  background-color: #2d2d2d; }
+
+.footer_box {
+  padding: 50rem 0rem 0rem 0rem !important; }
+
+.footer_information {
+  font-size: 16rem;
+  color: #aaaaaa; }
+
+.box_link {
+  width: 35rem;
+  height: 35rem;
+  background-color: #aaaaaa;
+  border-radius: 50%;
+  margin-left: 17rem; }
+
+.fab {
+  padding: 8rem;
+  font-size: large;
+  color: #2d2d2d; }
+
+@media (max-width: 1270px) {
+  .getTouch_form {
+    flex-wrap: wrap;
+    justify-content: space-around !important; } }
+
+@media (max-width: 1220px) {
+  .team-information {
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .team-information_text {
+    padding: 20rem  0rem 110rem 0rem; } }
+
+@media (max-width: 1200px) {
+  .products_pictures {
+    justify-content: space-evenly; }
+  .products_picture {
+    padding-bottom: 50rem; } }
+
+@media (max-width: 1024px) {
+  .adventages_information_text {
+    height: 460rem; }
+  .products_links_box {
+    flex-wrap: wrap;
+    justify-content: center; }
+  .information_text_mailText {
+    max-width: 900rem; }
+  .team-box {
+    height: 900rem; }
+  .team-information_text_subtitle {
+    padding: 10rem 0rem 10rem 0rem; }
+  .team-information_text_links {
+    flex-wrap: wrap; }
+  .team-information_text_photoes {
+    justify-content: space-between !important;
+    flex-wrap: wrap; } }
+
+@media (max-width: 1000px) {
+  .header_information, .adventages_information {
+    flex-wrap: wrap; }
+  .header_information_text, .header_information_video, .adventages_information_text, .adventages_information_adventages {
+    flex-basis: 100%; }
+  .writeUs_box_form {
+    display: flex;
+    flex-wrap: wrap; }
+  .writeUs_box_email {
+    margin-bottom: 20rem; }
+  .products_links_box {
+    flex-wrap: wrap;
+    justify-content: center; }
+  .products_link {
+    padding-bottom: 30rem; }
+  .navifation {
+    flex-wrap: wrap; }
+  .navigation_links {
+    width: 100%; } }
+
+@media (max-width: 768px) {
+  .adventages_information_text {
+    height: 600rem; }
+  .adventages_information_box {
+    flex-basis: 100%; }
+  .forms {
+    justify-content: space-around; }
+  .writeUs_box_btn, .writeUs_box_email, .forms_name, .forms_mail {
+    width: 100%; }
+  .information {
+    margin-left: 0rem; }
+  .footer_box {
+    flex-wrap: wrap;
+    padding-top: 20rem;
+    justify-content: space-around !important; }
+  .footer_links {
+    padding-top: 10rem; }
+  .bacgraund_picture {
+    max-width: 100%;
+    height: 517rem; }
+  .writeUs_box_btn, .writeUs_box_email {
+    width: 80%;
+    margin: 0rem 0rem 10rem 0rem; }
+  .team {
+    height: 1440rem; } }
+
+@media (max-width: 700px) {
+  .forms {
+    justify-content: space-around; }
+  .writeUs_box_btn, .writeUs_box_email, .forms_name, .forms_mail {
+    width: 100%; }
+  .writeUs_box_email {
+    margin-right: 0rem; }
+  .information {
+    margin-left: 0rem; }
+  .team-information_text_photoes {
+    flex-wrap: wrap;
+    justify-content: space-evenly !important; }
+  .writeUs_box_text {
+    top: 30rem;
+    left: 0%; } }
+
+@media (max-width: 548px) {
+  .adventages_information_adventages {
+    flex-direction: column; }
+  .team-box {
+    height: 1260rem; }
+  .adventages_information_box {
+    flex-basis: 100%; }
+  .writeUs_box_form {
+    left: 5%;
+    right: 5%; }
+  .footer_box {
+    flex-wrap: wrap;
+    padding-top: 20rem;
+    justify-content: space-around !important; }
+  .footer_links {
+    padding-top: 10rem; } }
+
+@media (max-width: 425px) {
+  .footer {
+    height: 140rem; }
+  .adventages_information_text {
+    height: 570rem; }
+  .team {
+    height: 1700rem; }
+  .writeUs_box_text {
+    padding: 60rem 0%; }
+  .bacgraund_picture {
+    display: none; }
+  .bacgraund_picture_small {
+    display: block; } }
+
+@media (max-width: 320px) {
+  .team-information_text_photo {
+    padding-top: 20rem; }
+  .adventages_information_text {
+    height: 680rem; }
+  .team {
+    height: 2000rem; }
+  .writeUs_box_text {
+    padding: 20rem 0%; }
+  .bacgraund_picture {
+    display: none; }
+  .bacgraund_picture_small {
+    display: block; } }
