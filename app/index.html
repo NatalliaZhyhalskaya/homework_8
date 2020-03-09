@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>site3</title>
-    
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/676220f3e9.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800&display=swap" rel="stylesheet">
@@ -14,30 +12,49 @@
 </head>
 <body>
 <header>
+    <ul class="hamburger_box">
+        <li class="navigation_links">
+                <div class="navigation_link hamburger_picture_closed" onclick="down_hamburger()">
+                    <i class="fas fa-times"></i>
+                </div>
+        </li>
+        <li class="navigation_links"><div class="navigation_link"><a class="navigation_link_title text-uppercase" href="#">home</a></div></li>
+        <li class="navigation_links"><div class="navigation_link"><a class="navigation_link_title text-uppercase" href="#portfolio">portfolio</a></div></li>
+        <li class="navigation_links"><div class="navigation_link"><a class="navigation_link_title text-uppercase" href="#about_us">about us</a></div></li>
+        <li class="navigation_links"><div class="navigation_link"><a class="navigation_link_title text-uppercase" href="#contact">contact</a></div></li>
+    </ul>
     <div class="container">
-        <ul class="navifation">
-            <li class="navigation_links"><div class="navigation_link"><a class="navigation_link_title text-uppercase" href="#">home</a></div></li>
-            <li class="navigation_links"><div class="navigation_link"><a class="navigation_link_title text-uppercase" href="#portfolio">portfolio</a></div></li>
-            <li class="navigation_links"><div class="navigation_link"><a class="navigation_link_title text-uppercase" href="#about_us">about us</a></div></li>
-            <li class="navigation_links"><div class="navigation_link"><a class="navigation_link_title text-uppercase" href="#contact">contact</a></div></li>
-        </ul>
-        
+            <div class="navigation_hamburger">
+                <div class="hamburger_picture" onclick="down_menu()">
+                    <div class="hamburger_picture_wraper">
+                        <div class="hamburger_picture_box">
+                            <div class="hamburger_line"></div>
+                            <div class="hamburger_line"></div>
+                            <div class="hamburger_line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation_box">
+                <ul class="navigation">
+                    <li class="navigation_links"><div class="navigation_link"><a class="navigation_link_title text-uppercase" href="#">home</a></div></li>
+                    <li class="navigation_links"><div class="navigation_link"><a class="navigation_link_title text-uppercase" href="#portfolio">portfolio</a></div></li>
+                    <li class="navigation_links"><div class="navigation_link"><a class="navigation_link_title text-uppercase" href="#about_us">about us</a></div></li>
+                    <li class="navigation_links"><div class="navigation_link"><a class="navigation_link_title text-uppercase" href="#contact">contact</a></div></li>
+                </ul>
+            </div>
         <div class="header_information">
             <div class="header_information_text">
                 <h1 class="header_information_text_title text-uppercase font-weight-bold">our strong organaisation</h1>
                     <p class="header_information_text_subtitle">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt  ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
                     <button class="header_information_text_btn text-capitalize">Contact Us</button>
-
             </div>
             <div class="header_information_video">
                 <iframe class="header_information_video_video" width="540rem" height="315" src="https://www.youtube.com/embed/5VAB-WecAF8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
             </div>
         </div>
-
     </div>
-    
 </header>
-
 <section class="container adventages">
     <div class="adventages_information d-flex">
         <div class="adventages_information_text">
@@ -50,12 +67,9 @@
             <div class="adventages_information_text_hidden " id="adventages_information_text_hidden">
                     <p class="adventages_information_text_subtitle">Lorem ipsum dolor sit amet,  consectetur adipis cing consectetur adipis cinconsectetur gghkubvdsdd elit, sed do eiusmod tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut labore et.Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut labore et.</p>
                     <button class="adventages_information_text_btn text-capitalize" onclick="down()">Close</button>
-
-
             </div>
         </div>
         <div class="adventages_information_adventages d-flex ">
-            
             <div class="adventages_information_box">
                 <img class="adventages_information_box_img" src="img/01.png">
                 <h3 class="adventages_information_box_titile">Management</h3>

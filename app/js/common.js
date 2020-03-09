@@ -1,5 +1,27 @@
 alert("ready for work");
 
+function down_menu()
+{
+    let a = document.querySelectorAll('.hamburger_box');
+for(let i = 0, l = a.length; i < l; i++){
+if ( a[i].style.display == 'block' )
+a[i].style.display = 'none'
+else
+a[i].style.display = 'block';
+}
+}
+
+function down_hamburger()
+{
+    let a = document.querySelectorAll('.hamburger_box');
+    for(let i = 0, l = a.length; i < l; i++){
+    if ( a[i].style.display == 'block' )
+    a[i].style.display = 'none'
+    else
+    a[i].style.display = 'block';
+}
+}
+
 function down()
 {
     let a = document.querySelectorAll('.adventages_information_text_hidden');
