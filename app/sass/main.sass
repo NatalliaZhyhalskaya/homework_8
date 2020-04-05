@@ -16,25 +16,85 @@ a
 header 
     background-color: #f6f2f2
 
-.navigation_box
+.contact_box 
+    padding-top: 10%
+    width: 100vw
+    background-color: rgba(72, 73, 73, 0.452)
+    height: 100vh
+    transition: 0.8s all
+    margin: 0 auto
+    position: fixed
+    z-index: 9999
+    display: none
+  
+.contact_box .forms 
+    margin: 0 auto
+    max-width: 100%
+    padding: 2%
+    background-color: #f6f2f2
+    display: flex
+    border: solid #ff3f40 3rem
+    border-radius: 10rem
+    box-shadow: 0px 0px 14px 5px #000000
+  
+.contact_box_input 
+    flex-basis: 40%
+  
+  
+.forms_subtytle 
+    font-size: 26rem
+    font-weight: 700
+    padding-bottom: 30rem
+    color: #313030
+
+
+.navigation_box 
     display: block
+
+.contact_box_closed 
+    width: 100%
+    display: flex
+    justify-content: flex-end
+
+.contact_box_closed i 
+    color: #2d2d2d
+    padding-bottom: 10rem
+    cursor: pointer
+
+.forms_input_box 
+    display: flex
+    justify-content: space-between
+    width: 100%
+    flex-wrap: wrap
 
 .navigation 
     background-color: #313030
     display: flex
     justify-content: center
+    transition: all 0.4s
+    position: fixed
+    left: 0
+    width: 100%
+    height: 90rem
+    z-index: 999
 
-.navigation_link 
-    height: 88rem
-    padding: 45rem 28rem 30rem 22rem
+.sticky
+    background-color: #8c8c8cad
+    height: 80rem
+
+.navigation_links
+    width: 20%
+    align-items: center
+    height: 100%
+    text-align: center
+    display: flex
+    justify-content: center
 
 .navigation_link_title 
     font-size: 14rem
     font-weight: bold
     color: #e0e0e0
-    padding: 45rem 28rem 32rem 22rem
-    margin: 0px
-
+    
 .navigation_link_title:hover 
     color: #e0e0e0 !important
 
@@ -66,8 +126,6 @@ header
     margin-bottom: 8rem
     border-radius: 5rem
 
-.hamburger_picture_closed
-    padding: 35rem 28rem 22rem 45rem
 
 .fa-times
     font-size: xx-large
@@ -83,6 +141,7 @@ header
 
 .header_information 
     display: flex
+    padding-top: 60rem
 
 .header_information_text, .header_information_video 
     flex-basis: 50%
@@ -107,6 +166,8 @@ header
     border-radius: 5rem
     box-shadow: none
     margin: 60rem 0rem 122rem 0rem
+    animation-iteration-count: infinite
+    outline: none !important
 
 
 .header_information_video_video 
@@ -208,15 +269,101 @@ header
     transition: all 0.3
     cursor: pointer
 
-.products_pictures 
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
+// .products_pictures 
+//     display: flex
+//     flex-wrap: wrap
+//     justify-content: space-between
 
+// /* картинка на странице */
+// .minimized 
+//   width: 300px
+//   cursor: pointer
+//   border: 1px solid #FFF
+
+ 
+// .minimized:hover 
+//   border: 1px solid yellow
+
+ 
+// /* увеличенная картинка */
+// #magnify 
+//   display: none
+ 
+//   /* position: absolute; upd: 24.10.2016 */
+//   position: fixed
+//   max-width: 600px
+//   height: auto
+//   z-index: 9999
+
+ 
+// #magnify img 
+//   width: 100%
+
+ 
+// /* затемняющий фон */
+// #overlay 
+//   display: none
+ 
+//   background: #000
+//   position: fixed
+//   top: 0
+//   left: 0
+//   height: 100%
+//   width: 100%
+//   opacity: 0.5
+//   z-index: 9990
+ 
+// /* кнопка закрытия */
+// #close-popup 
+//   width: 30px
+//   height: 30px
+ 
+//   background: #FFFFFF
+//   border: 1px solid #AFAFAF
+//   border-radius: 15px
+//   cursor: pointer
+//   position: absolute
+//   top: 15px
+//   right: 15px
+
+ 
+// #close-popup i 
+//   width: 30px
+//   height: 30px
+//   background: url(https://codernote.ru/files/cross.png) no-repeat center center
+//   background-size: 16px 16px
+//   display: block
+
+ 
+// @keyframes rota 
+//  25%  transform: rotate(360deg)
+
+ 
+// #close-popup:hover 
+//   animation: rota 4s infinite normal
+//   -webkit-animation-iteration-count: 1
+//   animation-iteration-count: 1
+
+ 
+
+
+
+
+// было с магнификом
 
 .products_picture 
-    width: 280rem
     padding-bottom: 10rem
+
+.element-item
+    margin-bottom: 15px
+    
+
+.persent-size 
+    width: 30%
+
+.gutter-width 
+    width: 4%
+
 
 .team-titile, .getTouch_title 
     padding: 120rem 0rem 0rem 0rem
@@ -231,7 +378,9 @@ header
     position: relative
     width: 100%
     height: 570rem
-
+.team-information_mainPhoto img 
+    max-width: 100%
+  
 .team_one 
     position: absolute
     display: block
@@ -263,9 +412,36 @@ header
     padding-right: 30rem
     color: #585858
 
+ 
+.team_photo_box 
+    position: relative
+    top: 0
+    width: 170rem
+    height: 170rem
+    margin: 2%
+  
+
+.team_overlay 
+    display: none
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 30%
+    opacity: 0.8
+
+
+.team_photo_box:hover .team_overlay 
+    display: block
+    transform: 0.8s
+
+.team_overlay p 
+    font-size: 18rem
+    color: #ffffff
+    justify-content: center
+
 .team-information_text_photo 
     width: 170rem
-    padding-top: 87rem
     opacity: 0.3
 
 .team-information_text_photo:hover 
@@ -290,12 +466,12 @@ header
     z-index: 1
     opacity: 0.3
 .bacgraund_picture
-        display: block
-        max-width: 100%
+    display: block
+    max-width: 100%
 .bacgraund_picture_small
-        display: none
-        max-width: 100%
-        height: 517rem
+    display: none
+    max-width: 100%
+    height: 517rem
 .writeUs_box 
     position: absolute
     z-index: 3
@@ -322,6 +498,7 @@ header
     color: black
     font-size: 20rem
     padding-left: 30rem
+    outline: none
 
 .writeUs_box_btn 
     background-color: #ff3f40
@@ -349,10 +526,19 @@ header
     border-radius: 5rem
     width: 335rem
     margin-bottom: 46rem
+    outline: none
+
+.forms_message
+    margin-bottom: 0rem
 
 .forms_message, .forms_btn 
     width: 100%
     resize: none
+
+.forms_span
+    font-size: 16rem
+    color: gray
+    margin-bottom: 46rem
 
 .forms_btn 
     color: #ffffff
@@ -361,11 +547,11 @@ header
     font-weight: bold
 
 .information 
-   max-width: 570rem
-   height: 460rem
-   padding: 140rem 0rem 0rem 80rem
-   background-color: #2d2d2d
-   margin-left: 50rem
+    max-width: 570rem
+    height: 460rem
+    padding: 140rem 0rem 0rem 80rem
+    background-color: #2d2d2d
+    margin-left: 50rem
 
 
 .information_box 
@@ -419,26 +605,24 @@ header
 @media (max-width: 1200px) 
     .products_pictures 
         justify-content: space-evenly
-    .products_picture 
-        padding-bottom: 50rem
-
+    
 @media (max-width: 1024px) 
     .adventages_information_text 
-       height: 460rem
+        height: 460rem
     .products_links_box 
-       flex-wrap: wrap
-       justify-content: center
+        flex-wrap: wrap
+        justify-content: center
     .information_text_mailText 
-       max-width: 900rem
+        max-width: 900rem
     .team-box 
         height: 900rem
     .team-information_text_subtitle 
-       padding: 10rem 0rem 10rem 0rem
+        padding: 10rem 0rem 10rem 0rem
     .team-information_text_links 
-       flex-wrap: wrap
+        flex-wrap: wrap
     .team-information_text_photoes 
-       justify-content: space-between!important
-       flex-wrap: wrap
+        justify-content: space-between!important
+        flex-wrap: wrap
     .writeUs_box_text
         padding: 50rem 0% 50rem 0%
 
@@ -458,39 +642,43 @@ header
     .products_link 
         padding-bottom: 30rem
     .navigation 
-       flex-wrap: wrap
+        flex-wrap: wrap
     .navigation_links 
-       width: 100%
+        width: 100%
 
 @media (max-width: 768px)
     .adventages_information_text 
-         height: 600rem
+        height: 600rem
     .adventages_information_box 
-         flex-basis: 100%
+        flex-basis: 100%
     .forms 
-         justify-content: space-around
+        justify-content: space-around
     .writeUs_box_btn, .writeUs_box_email, .forms_name, .forms_mail 
-         width: 100%
+        width: 100%
     .information 
-         margin-left: 0rem
+        margin-left: 0rem
     .footer_box 
-         flex-wrap: wrap
-         padding-top: 20rem
-         justify-content: space-around !important
+        flex-wrap: wrap
+        padding-top: 20rem
+        justify-content: space-around !important
     .footer_links
-         padding-top: 10rem
+        padding-top: 10rem
     .bacgraund_picture 
-         max-width: 100%
-         height: 517rem
+        max-width: 100%
+        height: 517rem
     .writeUs_box_btn, .writeUs_box_email
-          width: 80%
-          margin: 0rem 0rem 10rem 0rem
+        width: 80%
+        margin: 0rem 0rem 10rem 0rem
     .team
-         height: 1440rem
+        height: 1440rem
     .navigation
-         display: none
+        display: none
     .navigation_hamburger
-         display: block
+        display: block
+    .header_information
+        padding-top: 0rem
+    .navigation_links 
+        height: 20%
 
 @media (max-width: 700px) 
     .forms 
@@ -505,11 +693,11 @@ header
         flex-wrap: wrap
         justify-content: space-evenly !important
     .writeUs_box_text 
-         top: 30rem
-         left: 0%
+        top: 30rem
+        left: 0%
 @media (max-width: 548px) 
     .adventages_information_adventages 
-       flex-direction: column
+        flex-direction: column
     .team-box
         height: 1260rem
     .adventages_information_box 
@@ -526,9 +714,9 @@ header
 
 @media (max-width: 425px)
     .footer 
-       height: 140rem
+        height: 140rem
     .adventages_information_text 
-       height: 570rem
+        height: 570rem
     .team
         height: 1700rem
     .writeUs_box_text
@@ -537,6 +725,11 @@ header
         display: none
     .bacgraund_picture_small
         display: block
+    .persent-size
+        width: 40%
+    .contact_box_input 
+        flex-basis: 100%
+
 
 @media (max-width: 320px)
     .team-information_text_photo
@@ -544,10 +737,12 @@ header
     .adventages_information_text 
         height: 680rem
     .team
-       height: 2000rem
+        height: 2000rem
     .writeUs_box_text
         padding: 20rem 0%
     .bacgraund_picture
         display: none
     .bacgraund_picture_small
         display: block
+    .header_information_text_title
+        font-size: 56rem

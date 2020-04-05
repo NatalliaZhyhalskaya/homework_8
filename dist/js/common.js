@@ -196,7 +196,7 @@ return false;
 }
 else
 {
-$('#' + infodiv).html('осталось '+ (limit - textlength) +' символов.');
+$('#' + infodiv).html('characters '+ (limit - textlength) +' left');
 return true;
 } }
 $(function(){
